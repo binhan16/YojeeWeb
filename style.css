@@ -398,6 +398,16 @@ header {
     font-weight: 500;
   }
 
+  #mobile-header ul li span {
+    margin-right: 100px;
+  }
+
+  #mobile-header ul li a:hover{
+    background-color: #fff7fe;
+    color:#BB21AB;
+
+  }
+
   .menu-link i.fa-chevron-right{
     display:block;
     line-height: 30px;
