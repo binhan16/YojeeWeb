@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Yojee</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- backtoTop -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+      
+      <header id="header">
+
+        <div id="main-header">
+          <div class="wrapper">
+            <div class="logo">
+              <a href="#"><img src="./image/Logo.png" alt=""></a>
+            </div>
+            <div class="navigation">
+              <nav class="navbar navbar-expand-sm navbar-light">
+                <button type="button" class="menu-toggle" onclick="toggled()">
+                  <span class="mobile-menu-toggle-icon">
+                    <span class="icon-open">
+                      <a  href="#">
+                        <ion-icon name="menu-outline"></ion-icon>
+                      </a>
+                    </span>
+                    <span class="icon-close">
+                      <a onclick="closeMenu()" href="#"><ion-icon name="close-outline"></ion-icon></a>
+                    </span>
+                  </span>
+                </button>
+                <div class="main-header-bar-navigation">
+                  <ul id="primary-menu">
+                    <li class="menu-item">
+                      <a class="menu-link" href="#">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Our Software</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Solving Challenges</span>
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Features</span>
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                          <ul class="sub-menu side-menu d-none">
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Order Management</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Delivery Route Planning</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Delivery Route Optimization</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Fleet Delivery Tracking</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Automated Customer Update</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Delivery Driver App</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Electronic Proof of Deliveryt</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Rating & Cost Calculations</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Partner Management</span>
+                                </a>
+                              </li>
+
+                              <li class="main-menu">
+                                <a href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                </a>
+                              </li>
+                              <li  class=" menu-item ">
+                                <a class="menu-link" href="#">
+                                  <span>Reporting and Insights</span>
+                                </a>
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Pricing</span>
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>API</span>
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item">
+                      <a class="menu-link" href="#">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Industry</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </li>
+
+                    <li class="menu-item">
+                      <a class="menu-link" href="#">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Resources</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="#">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>About</span>
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <div class="right-menu">
+                <ul>
+                  <li class="menu-item">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Send SG</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-purple">DEMO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mobile-header">
+          <div class="menu-top-menu-container">
+            <ul id="primary-menu" class="toggled">
+              <li class="menu-item unclickable">
+                <a href="#" class="menu-link">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Our Software</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <i class="fas fa-chevron-left"></i>
+                      <span>Solving Challenges</span>
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <span>Fleet Management</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <span>Visibility in operations</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <span>Accountability among patterns</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <span>Cost and time control</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <i class="fas fa-chevron-left"></i>
+                      <span>Features</span>
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <i class="fas fa-chevron-left"></i>
+                      <span>Pricing</span>
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <i class="fas fa-chevron-left"></i>
+                      <span>API</span>
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item unclickable">
+                <a href="#" class="menu-link">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Industry</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="menu-item unclickable">
+                <a href="#" class="menu-link">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>Resources</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="menu-item unclickable">
+                <a href="#" class="menu-link">
+                  <i class="fas fa-chevron-left"></i>
+                  <span>About</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        
+
+        <!-- <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            
+              <a href="#">
+                <ion-icon name="menu-outline"></ion-icon>
+              </a>
+            
+          </label>
+          <div class=" ">
+            <div class="row">
+              <a class="logo" href="#">
+                <img src="./image/Logo.png" alt="">
+              </a>
+                  <div class="left-menu col-sm-4 ">
+                    <ul class="d-flex mt-5">
+                      <li class="pr-3"><a href="#">Our Software</a></li>
+                      <li class="pr-3"><a href="#">Industry</a></li>
+                      <li class="pr-3"><a href="#">Resources</a></li>
+                      <li class="pr-3"><a href="#">About</a></li>
+                    </ul>
+                  </div>
+                  <div class="right-menu col-sm-3 ml-5 mt-5">
+                    <ul class="d-flex">
+                      <li class="pr-3"><a href="#">Contact</a></li>
+                      <li class="pr-3"><a href="#">Send SG</a></li>
+                      <li>
+                        <button class="btn-demo">DEMO</button>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+              
+        </nav> -->
+        
+        
+      </header>
+
+      <div class="swf container d-flex">
+        <div class="row">
+          <div class="content col-12 col-sm-6 ">
+            <div class="text ">
+              <h1 class="font-weight-bold">See the world flow</h1>
+              <p class="font-weight-bold">Gain full visibility on your logistics operations, manage your partners and scale your business</p>
+            </div>
+            <div class="solutions">
+                <p>Chose your solutions:</p>
+                <ul class="choose d-flex ">
+                    <div class="row">
+                      <li class="nav-item col-sm-4 ">
+                        <button class="btn-chose">
+                          <span>ALL-IN-ONE SAAS PLATFORM</span>
+                        </button>
+                      </li>
+                      <li class="nav-item col-sm-4 ">
+                        <button class="btn-chose">
+                          <span>REDUCE COST</span>
+                        </button>
+                      </li>
+                      <li class="nav-item col-sm-4 ">
+                        <button class="btn-chose">
+                          <span>IMPROVE VISIBILITY</span>
+                        </button>
+                      </li>
+                    </div>
+                    
+                  </ul>
+            </div>
+        </div>
+        <div class="image col-12 col-sm-3 ">
+            <image src="./image/Business logistics.png"> 
+        </div>
+        </div>
+    </div>
+
+    <div class="featured container">
+        <p >Featured In</p>
+
+        <div class="items row text-align-center">
+          <a class="item col-2  col-sm-2" href="#">
+            <image src="./image/img1.png"/>
+          </a>
+          <a class="item col-2  col-sm-2" href="#">
+            <image src="./image/img2.png"/>            
+          </a>
+          <a class="item col-2 col-sm-2" href="#">
+            <image src="./image/img3.png"/>              
+          </a>
+          <a class="item col-2 col-sm-2" href="#">
+            <image src="./image/img4.png"/>                 
+          </a>
+          <a class="item col-2 col-sm-2" href="#">
+            <image src="./image/img5.png"/>                 
+          </a>
+          
+        </div>                  
+    </div>
+
+      <section class="chart">
+        <p>Automate your operations with 
+            <br> delivery management software</p>
+       <div class="container d-flex">
+         <div class="row">
+          <div class="left-chart col-sm-6 col-12">
+            <img src="./image/chart.png" alt="chart">
+            <br>
+            <span>Get real-time ETA based on the drivers location while keeping <br> your customers informed and dramatically reduces customer </span>
+        </div> 
+        <div class="right-chart col-sm-3 col-12">           
+         <ul>
+           <li>
+             <div class="icon-chart ">
+               <image src="./image/Group 510.png"/>
+               
+               <p >Route Planning and Route Optimisation</p>
+             </div>
+           </li>
+
+           <li>
+            <div class="icon-chart">
+              <image src="./image/Path 3968.png"/>
+              
+              <p class="pink">Live Tracking</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon-chart ">
+              <image src="./image/Group 509.png"/>
+
+              <p >Driver App</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon-chart">
+              <image src="./image/Group 514.png"/>
+              
+              <p class="pink">Manage your partners/vendors</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon-chart">
+              <image src="./image/Consulting.png"/>
+              
+              <p>Easy-to-use API</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon-chart">
+              <image src="./image/Movies.png"/>
+              <p>Analytics and Reporting</p>
+            </div>
+          </li>
+         </ul>
+
+        </div>  
+         </div>
+         
+       </div>
+       <br>
+         <button class="btn-find">FIND OUT MORE</button>
+      </section>
+
+      
+
+      <section class="do-more-with" >
+        <image src="./image/Path 4221.png"/>
+        <div class="doMoreWith">
+            <h1>Do more with Yojee</h1>
+            <p class="title">An enterprise-grade solution for companies of any size</p>
+            <div class="container ">
+            <div class="row">
+              <ul class="amount row d-flex  text-align-center">
+                <li class="col-12 col-sm-4 p-5">
+                    <button class='btn-amount'>4 <br> out of 10</button>
+                    <p>Top logistics providers <br> powered by Yojee <br> technolog</p>
+                </li>
+                <li class="col-12 col-sm-4 p-5">
+                    <button class='btn-amount'>100+</button>
+                    <p>Truck companies leveraging <br> the platform</p>
+                </li>
+                <li class="col-12 col-sm-4 p-5">
+                    <button class='btn-amount'>4,000,000+</button>
+                    <p>Deliveries Processed</p>
+                </li>
+            </ul>
+            </div>
+            </div>     
+        </div>     
+      </section>
+
+      <section class="form"> 
+          <div class="register">
+            <h1>Ready For The Free Trial</h1>
+            <p>See for yourself just how much money and time Yojee will save you and your team</p>
+          <div class="container d-flex mt-2" >
+              <div class="row">
+                <div class=" col-12 col-sm-6 ">
+                  <image class="image-left" src="./image/Freight quote request.png">
+                </div>
+                <div class="col-12 col-sm-3 form-register ml-auto ">
+                  <form >
+                    <label >First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <small></small>
+                    <span></span>
+                <br>
+                    <label >Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <small></small>
+                    <span></span>
+                <br>
+                    <label >Contact Number</label>
+                    <input type="number" id="cnumber" name="contactnumber" placeholder="Your contact number..">
+                    <small></small>
+                    <span></span>
+                <br>
+                    <label >Company</label>
+                    <input type="text" id="company" name="company" placeholder="Your company..">
+                    <small></small>
+                    <span></span>
+                <br>
+                    <label >Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+                    <small></small>
+                    <span></span>
+                <br>
+                   
+                    <label for="country">Country</label>
+                    <br>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                  
+                    <button type="submit" class="btn-submit">BOOK DEMO</button>
+                  </form>
+                </div>
+              </div>
+             
+                  
+              
+          </div>
+          </div>
+      </section>
+
+      <footer class="position-relative ">
+        <div class="container ">
+          <div class="row ">
+            <div class="image col-12 col-sm-3 mt-5 ">
+              <a href="#">
+                <image src="./image/Logo.png"/>
+              </a>   
+            </div>
+            <div  class="col-12 col-sm-3  pb-5 mt-5">
+              <h3>Our Software</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Solving Challenges Ave</li>
+                  <li class="contact"> Features</li>
+                  <li class="contact"> Pricing</li>
+                  <li class="contact"> API</li>
+                  
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>Industry</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Retail</li>
+                  <li class="contact"> Logistics</li>
+                  <li class="contact"> Food</li>
+                  <li class="contact"> Manufacturing</li>
+                  <li class="contact"> Construction</li>
+                  <li class="contact"> All Industries</li>
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>Resources</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Blog</li>
+                  <li class="contact"> Videos</li>
+                  <li class="contact"> Support</li>
+                  <li class="contact"> Developers</li>
+                  <li class="contact"> Case Study</li>
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>About</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Company</li>
+                  <li class="contact"> Media</li>
+                  <li class="contact"> In The Press</li>
+                  <li class="contact"> Poscast</li>
+                  <li class="contact"> Investor Relations</li>
+                  <li class="contact"> Careers</li>
+                  <li class="contact"> Contact Us</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="social  ">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 mt-3">
+                <ul class="list-unstyled d-flex">
+                  <li class="pr-5">Copyright 2021 Yojee</li>
+                  <li class="pr-5">Privacy Policy</li>
+                  <li class="pr-5">Term and Conditions</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6  social-icon mt-3">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <image src="./image/Group 442.png"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <image src="./image/Path 3902.png"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <image src="./image/Group 445.png"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <image src="./image/Group 700.png"/>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+          
+      </footer>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script src="./app.js"></script>
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
