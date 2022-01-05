@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown, Submenu</title>
+    <meta charset="UTF-8">
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./header.css">
+  </head>
+  <body class="test">
+      <h3>Dropdown, Submenu</h3>
+      <ul id="menu">
+        <li>
+            <a href="javascript:void(0)">
+                Our Software
+            </a>
+            <ul class="dropdown_menu">
+              <li>
+                <a href="javascript:void(0)">Solving Challenges</a>
+              </li>
+              <li>
+                <ul class="submenu">
+                    <a class="main-menu" href="#">View all
+                        <i class="fas fa-angle-double-right"></i>
+                        <br>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                      </a>
+                  <li>
+                    <a href="javascript:void(0)">Order Management</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Delivery Route Planning</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Delivery Route Optimization</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Fleet Delivery Tracking</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Automated Customer Update</a>
+                  </li>
+                  
+                </ul>
+                
+                <a href="javascript:void(0)">
+                    Features
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Pricing</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">API</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+                Industry 
+            </a>
+          </li>
+          
+          <li>
+            <a href="javascript:void(0)">
+                Resources
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+                About
+              
+            </a>
+            <ul class="dropdown_menu">
+              <li>
+                <a href="javascript:void(0)">item 4.1</a>
+              </li>
+              <li>
+                <ul class="submenu">
+                  <li>
+                    <a href="javascript:void(0)">item 4.2.1</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">item 4.2.2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">item 4.2.3</a>
+                  </li>
+                </ul>
+                <a href="javascript:void(0)">item 4.2 (Submenu) <span class="arrow arrow-right"></span></a>
+              </li>
+              <li>
+                <a>item 4.3</a>
+              </li>
+            </ul>
+          </li>
+      </ul>
+  </body>
+  <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+  <script>
+    $('#menu > li').hover(function() {
+      // khi thẻ menu li bị hover thì drop down menu thuộc thẻ li đó sẽ trượt xuống(hiện)
+      $('.dropdown_menu', this).slideDown();
+    },function() {
+      // khi thẻ menu li bị out không hover nữa thì drop down menu thuộc thẻ li đó sẽ trượt lên(ẩn)
+      $('.dropdown_menu', this).slideUp();
+    });
+  
+    $('.dropdown_menu > li').hover(function() {
+      // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt xuống(hiện)
+      $('.submenu', this).slideDown();
+    },function() {
+      // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
+      $('.submenu', this).slideUp();
+    });
+  </script>
+</html>

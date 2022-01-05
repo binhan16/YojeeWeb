@@ -129,6 +129,25 @@ function topFunction() {
 }
 
 
+// hover - show menu-2
+
+$('#menu > li').hover(function() {
+       
+    $('.dropdown_menu', this).slideDown();
+  },function() {
+   
+    $('.dropdown_menu', this).slideUp();
+  });
+
+  $('.dropdown_menu > li').hover(function() {
+    
+    $('.submenu', this).slideDown();
+  },function() {
+    
+    $('.submenu', this).slideUp();
+  });
+
+
 
 
 

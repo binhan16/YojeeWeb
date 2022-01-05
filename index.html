@@ -39,89 +39,130 @@
                     </div>
                     <div id="collapsibleNavbar"
                      class="col-sm-10 main-header-bar-navigation align-items-center collapse navbar-collapse">
-                      <ul id="primary-menu" class="col-sm-6 navbar-nav">
+                      <ul id="primary-menu" class="col-sm-6 navbar-nav dropdown">
                         <li class="nav-item">
                           <a class="nav-link ours" href="#">
-                            <i class=" fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-left"></i>
                             <span>OurSoftware</span>
                             <i class="fas fa-chevron-right"></i>
                           </a>
-    
+                          <!-- sub-menu FIX -->
+                          <ul class="dropdown_menu">
+                            <li >
+                              <a href="#" >Solving Challenges
+                                <i class="fas fa-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li >
+                              <ul class="submenu">
+                                <a class="main-menu" href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                  <br>
+                                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                                </a>
+                                <li >
+                                  <a href="#" >Order Management</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Delivery Route Planning</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Delivery Route Optimization</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Fleet Delivery Tracking</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Automated Customer Update</a>
+                                </li>
+                                
+                              </ul>
+
+                              <a href="#" >
+                                Features
+                                <i class="fas fa-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li >
+                              <a href="#" >Pricing</a>
+                            </li>
+                            <li >
+                              <a href="#" >API</a>
+                            </li>
+                          </ul>
+
                            <!-- sub-menu -->
-                          <ul class="sub-menu">
-                            <li class="nav-item">
+                          <!-- <ul class="sub-menu">
+                            <li class="nav-item menu-level-1">
                               <a class="nav-link" href="#">
                                 <i class="fas fa-chevron-left"></i>
                                 <span>Solving Challenges</span>
                                 <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item menu-level-1 dropdown">
                               <a class="nav-link" href="#">
                                 <i class="fas fa-chevron-left"></i>
                                 <span>Features</span>
                                 <i class="fas fa-chevron-right"></i>
                               </a>
-                              
-                                <ul class="sub-menu side-menu ">
+                                <ul class="sub-menu side-menu d-none">
                                   <a class="main-menu" href="#">View all
                                     <i class="fas fa-angle-double-right"></i>
                                     <br>
                                     <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
                                   </a>
                                   
-                                    <li  class=" nav-item ">
+                                    <li  class=" nav-item menu-level-2">
                                       <a class="nav-link" href="#">
                                         <span>Order Management</span>
                                       </a>
                                     </li>
                                     
-                                    <li  class=" nav-item ">
+                                    <li  class=" nav-item menu-level-2">
                                       <a class="nav-link" href="#">
                                         <span>Delivery Route Planning</span>
                                       </a>
                                     </li>
       
                                     
-                                    <li  class=" nav-item ">
+                                    <li  class=" nav-item menu-level-2">
                                       <a class="nav-link" href="#">
                                         <span>Delivery Route Optimization</span>
                                       </a>
                                     </li>
       
-                                    <li  class=" nav-item ">
+                                    <li  class=" nav-item menu-level-2">
                                       <a class="nav-link" href="#">
                                         <span>Fleet Delivery Tracking</span>
                                       </a>
                                     </li>
       
                                     
-                                    <li  class=" nav-item ">
+                                    <li  class=" nav-item menu-level-2">
                                       <a class="nav-link" href="#">
                                         <span>Automated Customer Update</span>
                                       </a>
                                     </li>
                                 </ul>
-                              
                             </li>
     
-                            <li class="nav-item">
+                            <li class="nav-item menu-level-1">
                               <a class="nav-link" href="#">
                                 <i class="fas fa-chevron-left"></i>
                                 <span>Pricing</span>
                                 <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item menu-level-1">
                               <a class="nav-link" href="#">
                                 <i class="fas fa-chevron-left"></i>
                                 <span>API</span>
                                 <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
-                          </ul>
+                          </ul> -->
                         </li>
-    
                         <li class="nav-item">
                           <a class="nav-link " href="#">
                             <i class="fas fa-chevron-left"></i>
@@ -146,6 +187,7 @@
                         </li>
                       </ul>
     
+                      <!-- right menu -->
                       <ul class="right-menu col-sm-4 " >
                         <li class="nav-item">
                           <a class="nav-link " href="#">
@@ -323,15 +365,15 @@
       <section class="chart">
         <p>Automate your operations with 
             <br> delivery management software</p>
-       <div class="container ">
+       <div class="container d-flex ">
          <div class="row">
-          <div class="left-chart col-sm-6 col-12">
+          <div class="left-chart col-sm-7 col-12">
             <img src="./image/chart.png" alt="chart">
             <br>
-            <span>Get real-time ETA based on the drivers location while keeping <br> your customers informed and dramatically reduces customer </span>
+            <p>Get real-time ETA based on the drivers location while keeping  your customers informed and dramatically reduces customer </p>
         </div> 
-        <div class="right-chart col-sm-3 col-12">    
-          <div class="item">
+        <div class="right-chart col-sm-5 col-12">    
+          <div class="item ">
             <div class="text">
               <div class="icon-chart">
                 <image src="./image/Group 510.png"/>
@@ -342,7 +384,7 @@
             </div>
           </div>
 
-            <div class="item">
+            <div class="item ">
               <div class="text">
                 <div class="icon-chart">
                   <image src="./image/Path 3968.png"/>
@@ -353,7 +395,7 @@
               </div>
             </div>
 
-              <div class="item">
+              <div class="item ">
                 <div class="text">
                   <div class="icon-chart">
                     <image src="./image/Group 509.png"/>
@@ -364,7 +406,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <div class="item ">
                   <div class="text">
                     <div class="icon-chart">
                       <image src="./image/Group 514.png"/>
@@ -375,7 +417,7 @@
                   </div>
               </div>
 
-              <div class="item">
+              <div class="item ">
                 <div class="text">
                     <div class="icon-chart">
                       <image src="./image/Consulting.png"/>
@@ -386,59 +428,9 @@
                 </div>
               </div>
           </div>
-         <!-- <ul>
-           <li>
-             <div class="icon-chart ">
-               
-               
-               
-             </div>
-           </li>
-
-           <li>
-            <div class="icon-chart">
-              
-              
-              
-            </div>
-          </li>
-
-          <li>
-            <div class="icon-chart ">
-              
-
-              
-            </div>
-          </li>
-
-          <li>
-            <div class="icon-chart">
-              
-              
-              
-            </div>
-          </li>
-
-          <li>
-            <div class="icon-chart">
-              
-              
-              
-            </div>
-          </li>
-
-          <li>
-            <div class="icon-chart">
-              <image src="./image/Movies.png"/>
-              <p>Analytics and Reporting</p>
-            </div>
-          </li>
-         </ul> -->
-
         </div>  
-         </div>
-         
-       </div>
+        </div>
+       
        <br>
          <button class="btn-find">FIND OUT MORE</button>
       </section>
@@ -527,15 +519,16 @@
                     <div class="form-input">
                       <p for="country">Country</p>
                     <br>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                    </select>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
                     </div>
                   
                     <button type="submit" class="btn-submit">BOOK DEMO</button>
                   </form>
+                  
                 </div>
               </div>
              
@@ -653,7 +646,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+
     <script src="./app.js"></script>
 
     <!-- icon -->
