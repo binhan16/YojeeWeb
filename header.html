@@ -1,122 +1,191 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Dropdown, Submenu</title>
-    <meta charset="UTF-8">
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./header.css">
-  </head>
-  <body class="test">
-      <h3>Dropdown, Submenu</h3>
-      <ul id="menu">
-        <li>
-            <a href="javascript:void(0)">
-                Our Software
-            </a>
-            <ul class="dropdown_menu">
-              <li>
-                <a href="javascript:void(0)">Solving Challenges</a>
-              </li>
-              <li>
-                <ul class="submenu">
-                    <a class="main-menu" href="#">View all
-                        <i class="fas fa-angle-double-right"></i>
-                        <br>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
-                      </a>
-                  <li>
-                    <a href="javascript:void(0)">Order Management</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Delivery Route Planning</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Delivery Route Optimization</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Fleet Delivery Tracking</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Automated Customer Update</a>
-                  </li>
-                  
-                </ul>
-                
-                <a href="javascript:void(0)">
-                    Features
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">Pricing</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">API</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-                Industry 
-            </a>
-          </li>
-          
-          <li>
-            <a href="javascript:void(0)">
-                Resources
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-                About
-              
-            </a>
-            <ul class="dropdown_menu">
-              <li>
-                <a href="javascript:void(0)">item 4.1</a>
-              </li>
-              <li>
-                <ul class="submenu">
-                  <li>
-                    <a href="javascript:void(0)">item 4.2.1</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">item 4.2.2</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">item 4.2.3</a>
-                  </li>
-                </ul>
-                <a href="javascript:void(0)">item 4.2 (Submenu) <span class="arrow arrow-right"></span></a>
-              </li>
-              <li>
-                <a>item 4.3</a>
-              </li>
-            </ul>
-          </li>
-      </ul>
-  </body>
-  <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Advanced Drop-down Menu | CodingNepal</title>
+      <link rel="stylesheet" href="./header.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="toggle-fix">
+         <div class="drop-btn">
+            <img src="./image/Logo.png" alt=""> 
+            <i class="fas fa-bars"></i>
 
-  <script>
-    $('#menu > li').hover(function() {
-      // khi thẻ menu li bị hover thì drop down menu thuộc thẻ li đó sẽ trượt xuống(hiện)
-      $('.dropdown_menu', this).slideDown();
-    },function() {
-      // khi thẻ menu li bị out không hover nữa thì drop down menu thuộc thẻ li đó sẽ trượt lên(ẩn)
-      $('.dropdown_menu', this).slideUp();
-    });
-  
-    $('.dropdown_menu > li').hover(function() {
-      // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt xuống(hiện)
-      $('.submenu', this).slideDown();
-    },function() {
-      // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
-      $('.submenu', this).slideUp();
-    });
-  </script>
+
+         </div>
+         <!-- <div class="tooltip"></div> -->
+         <div class="wrapper">
+            <ul class="menu-bar">
+               <li class="ours-item">
+                  <a href="#">
+                     
+                    Our Software <i class="fas fa-angle-right"></i>
+                  </a>
+               </li>
+               <li class="industry-item">
+                  <a href="#">
+                     
+                    Industry <i class="fas fa-angle-right"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     
+                    Resources 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     
+                    About 
+                  </a>
+               </li>
+               <!-- bottom menu -->
+              <div class="bottom-toggle">
+                <a href="#" class="btn-purple">
+                  BOOK A DEMO
+                </a>
+                <ul class="bottom-menu">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>SendSG</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <!-- Our Software Menu-items -->
+            <ul class="ours-drop">
+               <li class="arrow back-ours-btn"><i class="fas fa-angle-left"></i>Our Software</li>
+               <li>
+                  <a href="#">
+                    Solving Challenges 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    Features 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    Pricing 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    API 
+                  </a>
+               </li>
+
+               <!-- bottom menu -->
+              <div class="bottom-toggle">
+                <a href="#" class="btn-purple">
+                  BOOK A DEMO
+                </a>
+                <ul class="bottom-menu">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>SendSG</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <!-- Industry Menu-items -->
+            <ul class="industry-drop">
+               <li class="arrow back-industry-btn"><i class="fas fa-angle-left"></i>Industry</li>
+               <li>
+                  <a href="#">
+                    Solving Challenges 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    Features 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    Pricing 
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                    API 
+                  </a>
+               </li>
+
+               <!-- bottom menu -->
+              <div class="bottom-toggle">
+                <a href="#" class="btn-purple">
+                  BOOK A DEMO
+                </a>
+                <ul class="bottom-menu">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                      <span>SendSG</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+         </div>
+
+         
+      </div>
+      <script>
+         const drop_btn = document.querySelector(".drop-btn i");
+         const tooltip = document.querySelector(".tooltip");
+         const menu_wrapper = document.querySelector(".wrapper");
+         const menu_bar = document.querySelector(".menu-bar");
+         const ours_drop = document.querySelector(".ours-drop");
+         const industry_drop = document.querySelector(".industry-drop");
+         const ours_item = document.querySelector(".ours-item");
+         const industry_item = document.querySelector(".industry-item");
+         const ours_btn = document.querySelector(".back-ours-btn");
+         const industry_btn = document.querySelector(".back-industry-btn");
+           drop_btn.onclick = (()=>{
+             menu_wrapper.classList.toggle("show");
+             tooltip.classList.toggle("show");
+           });
+           ours_item.onclick = (()=>{
+             menu_bar.style.marginLeft = "-400px";
+             setTimeout(()=>{
+              ours_drop.style.display = "block";
+             }, 100);
+           });
+           industry_item.onclick = (()=>{
+             menu_bar.style.marginLeft = "-400px";
+             setTimeout(()=>{
+               industry_drop.style.display = "block";
+             }, 100);
+           });
+           ours_btn.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             ours_drop.style.display = "none";
+           });
+           industry_btn.onclick = (()=>{
+             industry_drop.style.display = "none";
+             menu_bar.style.marginLeft = "0px";
+           });
+      </script>
+   </body>
 </html>

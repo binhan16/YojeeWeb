@@ -214,7 +214,7 @@
             </div>
 
             <!-- Toggle -->
-            <div class="toggle container ">
+            <!-- <div class="toggle container ">
               <input type="checkbox" class="navigation__checkbox" id="toggle">
               <label for="toggle" class="navigation__button">
                 <span class="navigation__icon"></span>
@@ -224,13 +224,14 @@
                 <ul class="navigation__list">
                     <li class="active">
                       <input type="checkbox" class="submenu__checkbox" id="toggle">
+                    
                       <a href="#" class="navigation__link our-dropdown  "> 
                         Our Software
                         <i class="fas fa-chevron-right"></i>
                       </a>
                       
-                       <!-- Sub-menu  -->
-                      <ul class="sub-toggle-menu active">
+                       
+                      <ul class="sub-toggle-menu">
                         <li><a href="#" class="navigation__link"> 
                           Solving Challenges
                           <i class="fas fa-chevron-right"></i>
@@ -291,14 +292,156 @@
 
                 
             </nav>
-            </div>
+            </div> -->
+            <div class="toggle-fix">
+              <div class="drop-btn ">
+                 <img src="./image/Logo.png" alt=""> 
+                 <i class="fas fa-bars"></i>
+              </div>
+
+              <div class="show-menu ">
+                 <ul class="menu-bar">
+                    <li class="ours-item">
+                       <a href="#">
+                          
+                         Our Software <i class="fas fa-angle-right"></i>
+                       </a>
+                    </li>
+                    <li class="industry-item">
+                       <a href="#">
+                          
+                         Industry <i class="fas fa-angle-right"></i>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                          
+                         Resources 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                          
+                         About 
+                       </a>
+                    </li>
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+                 <!-- Our Software Menu-items -->
+                 <ul class="ours-drop">
+                    <li class="arrow back-ours-btn"><i class="fas fa-angle-left"></i>Our Software</li>
+                    <li>
+                       <a href="#">
+                         Solving Challenges 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Features 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Pricing 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         API 
+                       </a>
+                    </li>
+     
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+                 <!-- Industry Menu-items -->
+                 <ul class="industry-drop">
+                    <li class="arrow back-industry-btn"><i class="fas fa-angle-left"></i>Industry</li>
+                    <li>
+                       <a href="#">
+                         Solving Challenges 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Features 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Pricing 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         API 
+                       </a>
+                    </li>
+     
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+              </div>
+     
+              
+           </div>
+          
           </div>
         </div>
       </header>
       <!-- Header End -->
       
       <!-- See world flow Start -->
-      <section class="swf container d-flex">
+      <section class="swf container">
         <div class="row">
           <div class="content col-12 col-sm-7 ">
             <div class="text ">
@@ -337,7 +480,7 @@
       <!-- See world flow End -->
 
       <!-- Feartured Start -->
-      <section class="featured container">
+      <section class="featured container" style="display:none;">
         <p >Featured In</p>
 
         <div class="items row text-align-center">
@@ -365,7 +508,7 @@
       <section class="chart">
         <p>Automate your operations with 
             <br> delivery management software</p>
-       <div class="container d-flex ">
+       <div class="container">
          <div class="row">
           <div class="left-chart col-sm-7 col-12">
             <img src="./image/chart.png" alt="chart">
